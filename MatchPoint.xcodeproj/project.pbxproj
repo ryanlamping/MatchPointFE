@@ -14,6 +14,8 @@
 		EE482BA32C23D66000A7D993 /* AuthenticationFieldName.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE482BA22C23D66000A7D993 /* AuthenticationFieldName.swift */; };
 		EE482BA52C23D8A500A7D993 /* RegistrationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE482BA42C23D8A500A7D993 /* RegistrationField.swift */; };
 		EE482BA82C23D91400A7D993 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE482BA72C23D91400A7D993 /* RegistrationViewModel.swift */; };
+		EE8429982CDAD45D007D2100 /* AnimatedDropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8429972CDAD45D007D2100 /* AnimatedDropDownMenu.swift */; };
+		EEA898FB2CA772ED005F7102 /* RankingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA898FA2CA772ED005F7102 /* RankingService.swift */; };
 		EEBB1B8B2C1FC87F0070A378 /* MatchPointApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB1B8A2C1FC87F0070A378 /* MatchPointApp.swift */; };
 		EEBB1B8D2C1FC87F0070A378 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB1B8C2C1FC87F0070A378 /* ContentView.swift */; };
 		EEBB1B8F2C1FC8820070A378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEBB1B8E2C1FC8820070A378 /* Assets.xcassets */; };
@@ -25,6 +27,14 @@
 		EEBB1BBD2C1FD0030070A378 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB1BBC2C1FD0030070A378 /* SignUpView.swift */; };
 		EEBB1BBF2C1FD0120070A378 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB1BBE2C1FD0120070A378 /* LoginView.swift */; };
 		EEC8402A2C8B9CB70004088E /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC840292C8B9CB70004088E /* SignUpService.swift */; };
+		EED21A232C96F1DB000F7020 /* AtpRankingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED21A222C96F1DB000F7020 /* AtpRankingsView.swift */; };
+		EED21A252C96F3A8000F7020 /* AtpRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED21A242C96F3A8000F7020 /* AtpRanking.swift */; };
+		EEF34C7F2CDD389600D11501 /* RankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF34C7E2CDD389600D11501 /* RankView.swift */; };
+		EEF34C812CDD3A6D00D11501 /* CirclePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF34C802CDD3A6D00D11501 /* CirclePhoto.swift */; };
+		EEF34C842CDD855F00D11501 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF34C832CDD855F00D11501 /* PlayerView.swift */; };
+		EEF34C872CDD857500D11501 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF34C862CDD857500D11501 /* Player.swift */; };
+		EEF34C8A2CDD859200D11501 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF34C892CDD859200D11501 /* Player.swift */; };
+		EEF34C8D2CDD875800D11501 /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF34C8C2CDD875800D11501 /* PlayerService.swift */; };
 		EEFE18682C33832400380903 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE18672C33832400380903 /* LoginService.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +63,8 @@
 		EE482BA22C23D66000A7D993 /* AuthenticationFieldName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFieldName.swift; sourceTree = "<group>"; };
 		EE482BA42C23D8A500A7D993 /* RegistrationField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationField.swift; sourceTree = "<group>"; };
 		EE482BA72C23D91400A7D993 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		EE8429972CDAD45D007D2100 /* AnimatedDropDownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedDropDownMenu.swift; sourceTree = "<group>"; };
+		EEA898FA2CA772ED005F7102 /* RankingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingService.swift; sourceTree = "<group>"; };
 		EEBB1B872C1FC87F0070A378 /* MatchPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEBB1B8A2C1FC87F0070A378 /* MatchPointApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchPointApp.swift; sourceTree = "<group>"; };
 		EEBB1B8C2C1FC87F0070A378 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +79,14 @@
 		EEBB1BBC2C1FD0030070A378 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		EEBB1BBE2C1FD0120070A378 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EEC840292C8B9CB70004088E /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
+		EED21A222C96F1DB000F7020 /* AtpRankingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtpRankingsView.swift; sourceTree = "<group>"; };
+		EED21A242C96F3A8000F7020 /* AtpRanking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtpRanking.swift; sourceTree = "<group>"; };
+		EEF34C7E2CDD389600D11501 /* RankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankView.swift; sourceTree = "<group>"; };
+		EEF34C802CDD3A6D00D11501 /* CirclePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePhoto.swift; sourceTree = "<group>"; };
+		EEF34C832CDD855F00D11501 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		EEF34C862CDD857500D11501 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		EEF34C892CDD859200D11501 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		EEF34C8C2CDD875800D11501 /* PlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
 		EEFE18672C33832400380903 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,12 +122,29 @@
 			path = Schemas;
 			sourceTree = "<group>";
 		};
+		EE311DF22C9B8CB800405E88 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				EE482BA72C23D91400A7D993 /* RegistrationViewModel.swift */,
+				EE0A37402C365E5000270C9F /* LoginViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		EE311DF32C9B8CE100405E88 /* Rankings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rankings;
+			sourceTree = "<group>";
+		};
 		EE482B9D2C23C71E00A7D993 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				EEBB1BBE2C1FD0120070A378 /* LoginView.swift */,
 				EEBB1BBC2C1FD0030070A378 /* SignUpView.swift */,
 				EE482B9E2C23C73C00A7D993 /* AuthenticationView.swift */,
+				EED21A222C96F1DB000F7020 /* AtpRankingsView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -120,6 +157,32 @@
 				EE0A373E2C365AFF00270C9F /* User.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		EE8429962CDAD43F007D2100 /* Reusuable Components */ = {
+			isa = PBXGroup;
+			children = (
+				EE8429972CDAD45D007D2100 /* AnimatedDropDownMenu.swift */,
+				EEF34C7E2CDD389600D11501 /* RankView.swift */,
+				EEF34C802CDD3A6D00D11501 /* CirclePhoto.swift */,
+			);
+			path = "Reusuable Components";
+			sourceTree = "<group>";
+		};
+		EEA898F82CA77261005F7102 /* Rankings */ = {
+			isa = PBXGroup;
+			children = (
+				EED21A242C96F3A8000F7020 /* AtpRanking.swift */,
+			);
+			path = Rankings;
+			sourceTree = "<group>";
+		};
+		EEA898F92CA772D3005F7102 /* Rankings */ = {
+			isa = PBXGroup;
+			children = (
+				EEA898FA2CA772ED005F7102 /* RankingService.swift */,
+			);
+			path = Rankings;
 			sourceTree = "<group>";
 		};
 		EEBB1B7E2C1FC87F0070A378 = {
@@ -203,6 +266,8 @@
 		EEBB1BB62C1FC8D20070A378 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EEF34C8B2CDD874D00D11501 /* Player */,
+				EEA898F92CA772D3005F7102 /* Rankings */,
 				EEFE18662C33830200380903 /* Authentication */,
 			);
 			path = Services;
@@ -211,9 +276,10 @@
 		EEBB1BB72C1FC8D80070A378 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				EEF34C882CDD858800D11501 /* Player */,
+				EE311DF32C9B8CE100405E88 /* Rankings */,
+				EE311DF22C9B8CB800405E88 /* Authentication */,
 				EE482BA02C23C94F00A7D993 /* ViewModifier.swift */,
-				EE482BA72C23D91400A7D993 /* RegistrationViewModel.swift */,
-				EE0A37402C365E5000270C9F /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -221,6 +287,8 @@
 		EEBB1BB82C1FC8E80070A378 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EEF34C822CDD854C00D11501 /* Player */,
+				EE8429962CDAD43F007D2100 /* Reusuable Components */,
 				EE482B9D2C23C71E00A7D993 /* Authentication */,
 			);
 			path = Views;
@@ -229,9 +297,43 @@
 		EEBB1BB92C1FC8F20070A378 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EEF34C852CDD856A00D11501 /* Player */,
+				EEA898F82CA77261005F7102 /* Rankings */,
 				EE482BA62C23D8A900A7D993 /* Authentication */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EEF34C822CDD854C00D11501 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				EEF34C832CDD855F00D11501 /* PlayerView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		EEF34C852CDD856A00D11501 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				EEF34C862CDD857500D11501 /* Player.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		EEF34C882CDD858800D11501 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				EEF34C892CDD859200D11501 /* Player.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		EEF34C8B2CDD874D00D11501 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				EEF34C8C2CDD875800D11501 /* PlayerService.swift */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 		EEFE18662C33830200380903 /* Authentication */ = {
@@ -373,16 +475,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF34C872CDD857500D11501 /* Player.swift in Sources */,
 				EEBB1BBD2C1FD0030070A378 /* SignUpView.swift in Sources */,
 				EEBB1B8D2C1FC87F0070A378 /* ContentView.swift in Sources */,
 				EE482B9F2C23C73C00A7D993 /* AuthenticationView.swift in Sources */,
+				EEF34C8A2CDD859200D11501 /* Player.swift in Sources */,
 				EEBB1B8B2C1FC87F0070A378 /* MatchPointApp.swift in Sources */,
 				EEBB1BBF2C1FD0120070A378 /* LoginView.swift in Sources */,
 				EE482BA82C23D91400A7D993 /* RegistrationViewModel.swift in Sources */,
+				EE8429982CDAD45D007D2100 /* AnimatedDropDownMenu.swift in Sources */,
+				EEF34C7F2CDD389600D11501 /* RankView.swift in Sources */,
+				EEF34C812CDD3A6D00D11501 /* CirclePhoto.swift in Sources */,
+				EEF34C842CDD855F00D11501 /* PlayerView.swift in Sources */,
+				EEF34C8D2CDD875800D11501 /* PlayerService.swift in Sources */,
 				EEFE18682C33832400380903 /* LoginService.swift in Sources */,
 				EE482BA32C23D66000A7D993 /* AuthenticationFieldName.swift in Sources */,
 				EE0A37412C365E5000270C9F /* LoginViewModel.swift in Sources */,
 				EEC8402A2C8B9CB70004088E /* SignUpService.swift in Sources */,
+				EEA898FB2CA772ED005F7102 /* RankingService.swift in Sources */,
+				EED21A252C96F3A8000F7020 /* AtpRanking.swift in Sources */,
+				EED21A232C96F1DB000F7020 /* AtpRankingsView.swift in Sources */,
 				EE0A373F2C365AFF00270C9F /* User.swift in Sources */,
 				EE482BA12C23C94F00A7D993 /* ViewModifier.swift in Sources */,
 				EEBB1BBB2C1FC9370070A378 /* Color.swift in Sources */,

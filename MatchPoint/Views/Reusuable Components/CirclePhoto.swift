@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct CirclePhoto: View {
+    var image: Image
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        image
+            .resizable()  // Ensure the image can scale
+            .scaledToFit() // Maintain aspect ratio
+            .clipShape(Circle())
+            .overlay {
+                Circle().stroke(.white, lineWidth: 4.0)
+            }
+            .shadow(radius: 7)
     }
 }
 
 #Preview {
-    CirclePhoto()
+    CirclePhoto(image: Image("alcaraz_head_2024"))
 }

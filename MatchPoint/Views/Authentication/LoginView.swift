@@ -51,7 +51,7 @@ struct LoginView: View {
                     .cornerRadius(10)
             }
             .padding(.top, 20)
-            
+            // redirect to home screen
             Text(viewModel.loginStatus)
                 .padding()
                 .foregroundColor(Color(hex: "E1E587"))

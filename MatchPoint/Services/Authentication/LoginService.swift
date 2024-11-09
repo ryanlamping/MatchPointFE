@@ -9,7 +9,7 @@ import Foundation
 
 class LoginService {
     // Defining api route for login
-    let apiURL = URL(string: "http://localhost:8000/auth/token")!
+    let apiURL = URL(string: "http://localhost:8000/auth/token/")!
 
     // takes in user inputted username, password and gracefully handles all situations
     func login(email: String, password: String, completion: @escaping (Result<User, Error>) -> Void) {
@@ -18,11 +18,20 @@ class LoginService {
         
         // Specify http method (posting)
         request.httpMethod = "POST"
+        // sending through form data, not json
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        // Create url-encoded body with user inputs
+        let jsonBody: [String: String] = ["email": email.lowercased(), "password": password]
         
-        // Create JSON body with user inputs
-        let body = ["email": email, "password": password]
-        request.httpBody = try? JSONSerialization.data(withJSONObject: body)
+        print("Sending request with body: \(jsonBody)")
+        
+            do {
+                request.httpBody = try JSONSerialization.data(withJSONObject: jsonBody, options: .prettyPrinted)
+            } catch {
+                completion(.failure(error))
+                return
+            }
         
         // create task to check login
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
@@ -34,6 +43,10 @@ class LoginService {
                 // empty response
                 return
             }
+            if let httpResponse = response as? HTTPURLResponse {
+                print("Response status code: \(httpResponse.statusCode)")
+            }
+
             do {
                 let user = try JSONDecoder().decode(User.self, from: data)
                 completion(.success(user))
