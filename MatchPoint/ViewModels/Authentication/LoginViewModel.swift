@@ -21,6 +21,7 @@ class LoginViewModel: ObservableObject {
                 switch result {
                     
                 case .success(let user):
+                    // save jwt token
                     self?.loginStatus =  "Welcome, \(user.email)!"
                     
                 case .failure :

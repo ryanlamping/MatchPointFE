@@ -9,9 +9,10 @@ import Foundation
 import SwiftUI
 
 enum RegistrationField: String, CaseIterable {
-    case firstName = "First Name"
-    case lastName = "Last Name"
+    case name = "Name"
     case email = "Email"
     case password = "Password"
     case confirmPassword = "Confirm Password"
+    case birthday = "Birthday"
+    case nationality = "Nationality"
 }

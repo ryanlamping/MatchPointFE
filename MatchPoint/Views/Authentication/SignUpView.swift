@@ -30,11 +30,8 @@ struct SignUpView: View {
                         .frame(width: 120, alignment: .leading)
                     
                     switch field {
-                    case .firstName:
-                        TextField("Enter \(field.rawValue)", text: $viewModel.firstName)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                    case .lastName:
-                        TextField("Enter \(field.rawValue)", text: $viewModel.lastName)
+                    case .name:
+                        TextField("Enter \(field.rawValue)", text: $viewModel.name)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                     case .email:
                         TextField("Enter \(field.rawValue)", text: $viewModel.email)
@@ -46,6 +43,12 @@ struct SignUpView: View {
                     case .confirmPassword:
                         SecureField("Enter \(field.rawValue)", text: $viewModel.confirmPassword)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
+                    case .nationality:
+                        TextField("Enter \(field.rawValue)", text: $viewModel.nationality)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                    case .birthday:
+                        TextField("Enter \(field.rawValue)", text: $viewModel.birthday)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
                     }
                 }
                 .padding(.vertical, 5)
@@ -53,6 +56,7 @@ struct SignUpView: View {
             
             Button(action: {
                 // Call backend api to register user into database
+                viewModel.signUp()
             }) {
                 Text("Register")
                     .font(.headline)
@@ -63,6 +67,11 @@ struct SignUpView: View {
                     .cornerRadius(10)
             }
             .padding(.top, 20)
+            
+            // redirect to home screen
+            Text(viewModel.signupStatus)
+                .padding()
+                .foregroundColor(Color(hex: "E1E587"))
             Spacer()
         }
         .padding()
@@ -75,4 +84,6 @@ struct SignUpView_Previews: PreviewProvider {
         SignUpView()
     }
 }
+
+
 
